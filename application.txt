@@ -1,0 +1,16 @@
+﻿spring:
+  profiles:
+    activit:
+       -dev
+	
+---
+spring:
+  profile:  dev
+  application:
+    name:  dev
+
+---
+spring:
+  profile:  test
+  application:
+    name:  test
