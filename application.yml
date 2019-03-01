@@ -1,7 +1,7 @@
 ﻿spring:
   profiles:
     activit:
-       -dev
+       - dev
 	
 ---
 spring:
