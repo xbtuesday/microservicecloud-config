@@ -1,16 +1,18 @@
 ﻿spring:
   profiles:
     activit:
-       - dev
-	
----
-spring:
-  profile:  dev
-  application:
-    name:  dev
+	  - dev
 
 ---
 spring:
-  profile:  test
+  port:  8081
+  profiles:  dev
   application:
-    name:  test
+    name:  span
+
+---
+spring:
+  port:  8080
+  profiles:  test
+  application:
+    name:  lpan
