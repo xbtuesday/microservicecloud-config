@@ -21,3 +21,6 @@ mybatis:
   config-lication:  classpath:mybatis/mybatis.cfg.xml
   type-aliases-package:  com.lpan.springcloud
   mapper-locations:  classpath:mybatis/mapper/**/*.xml
+
+server:
+  port: 8090
