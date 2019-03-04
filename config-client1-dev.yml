@@ -1,0 +1,23 @@
+spring:
+  application:
+    name:  microservice-lpan
+  datasource:
+    type:  com.alibaba.druid.pool.DruidDataSource
+    driver-class-name:  com.mysql.jdbc.Driver
+    uri:  jdbc:mysql://10.71.76.133:3306/momentkill
+    username:  root
+    password:  Lpan@123
+    
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://lpan.eureka7001.com:7001
+  instance:
+    instance-id:microservicecloud-lpan
+    prefer-ip-address:  true
+
+mybatis:
+  config-lication:  classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package:  com.lpan.springcloud
+  mapper-locations:  classpath:mybatis/mapper/**/*.xml
