@@ -14,7 +14,7 @@ eureka:
     service-url:
       defaultZone:  http://lpan.eureka7001.com:7001
   instance:
-    instance-id:microservicecloud-lpan
+    instance-id:  microservicecloud-lpan
     prefer-ip-address:  true
 
 mybatis:
